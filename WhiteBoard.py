@@ -37,7 +37,7 @@ class Whiteboard:
 				self.PenUp(event)
 
 	def Draw(self, linesets):
-	        screen.fill([255, 255, 255])
+		screen.fill([255, 255, 255])
 		txt = fnt.render(self.statusLabel, 1, (0, 0, 0))
 		screen.blit(fnt.render(self.statusLabel, 1, (0, 0, 0)), [10, 10])
 		txt = fnt.render(self.playersLabel, 1, (0, 0, 0))

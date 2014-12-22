@@ -1,4 +1,4 @@
-__author__ = 'Otniel Yeheskiel'
+
 import sys
 from time import sleep
 from sys import stdin, exit

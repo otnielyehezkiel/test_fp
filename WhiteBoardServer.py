@@ -1,7 +1,6 @@
 __author__ = 'otniel'
 import sys
-from time import sleep, localtime
-from random import randint
+from time import sleep
 from weakref import WeakKeyDictionary
 
 from PodSixNet.Server import Server

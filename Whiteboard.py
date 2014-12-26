@@ -43,5 +43,5 @@ class Whiteboard:
 		txt = fnt.render(self.playersLabel, 1, (0, 0, 0))
 		screen.blit(fnt.render(self.playersLabel, 1, (0, 0, 0)), [10, 20])
 		[[pygame.draw.aalines(screen, c, False, l) for l in lines if len(l) > 1] for c, lines in linesets]
-	        pygame.display.flip()
+		pygame.display.flip()
 		self.frame += 1

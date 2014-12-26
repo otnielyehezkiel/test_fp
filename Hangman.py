@@ -58,7 +58,6 @@ hangmanpics = ['''
                /|\  |
                / \  |
                     |
-                    |
               =========== ''']
 
 Country = 'india australia egypt ghana japan china pakistan afghanistan kenya libya chile'
@@ -82,7 +81,6 @@ def err():
     return Country + City + Famousp
 
 def Welcomenote():
-
     print('Select One Category')
     print(' 1: Countries')
     print(' 2: Cities')
@@ -95,8 +93,9 @@ def Welcomenote():
         "3": Famous }
 
     choose = input()
+    h = Country.split()
+    print (h)
     return choice.get(choose,err)().split()
-
 
 def getRandomword(wordlist):
     wordindex = random.randint(0,len(wordlist)-1)
@@ -173,7 +172,6 @@ while True:
             display(hangmanpics,missedletters,correctletters,secretword)
             print('You have lost the game, the word was :' +secretword)
             done = True
-
     if done:
         if playagain():
             os.system('cls')
